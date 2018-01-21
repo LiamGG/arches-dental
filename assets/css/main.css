@@ -2666,3 +2666,7 @@
 li.alt {
 	color: #333;
 }
+
+p.directions{
+	font-size: 150%;
+}
