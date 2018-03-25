@@ -1221,6 +1221,7 @@
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
+			max-height:250px;
 		}
 
 		.image.left {
@@ -1639,10 +1640,10 @@
 
 	#banner-wrapper {
 		position: relative;
-		background-image: url("images/overlay.png"), url("images/overlay.png"), url("../../images/Outside.JPG");
-		background-position: top left, top left, center center;
-		background-repeat: repeat, repeat, no-repeat;
-		background-size: auto, auto, cover;
+		background-image: url("../../images/Outside.JPG");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		z-index: 1;
 	}
 
