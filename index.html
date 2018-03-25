@@ -69,7 +69,7 @@
 										<h2 class="major"><span>The Team</span></h2>
 										<div>
 											<div class="row">
-												<div class="3u 12u(mobile)">
+												<div class="4u 12u(mobile)">
 
 													<!-- Feature -->
 														<section class="box feature">
@@ -84,7 +84,7 @@
 														</section>
 
 												</div>
-												<div class="3u 12u(mobile)">
+												<div class="4u 12u(mobile)">
 
 													<!-- Feature -->
 														<section class="box feature">
@@ -101,7 +101,7 @@
 														</section>
 
 												</div>
-												<div class="3u 12u(mobile)">
+												<div class="4u 12u(mobile)">
 
 													<!-- Feature -->
 														<section class="box feature">
@@ -115,7 +115,10 @@
 														</section>
 
 												</div>
-												<div class="3u 12u(mobile)">
+												</div>
+												<div class="row">
+												<div class="1u 0u(mobile)"></div>
+												<div class="4u 12u(mobile)">
 
 													<!-- Feature -->
 														<section class="box feature">
@@ -129,6 +132,21 @@
 														</section>
 
 												</div>
+												<div class="2u 0u(mobile)">
+												</div>
+												<div class="4u 12u(mobile)">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<img class="image featured"src="images/Sonya.jpg" alt="" />
+															<h3>Sonya</h3>
+															<ul>
+																<li>Dental Surgery Assistant</li>
+															</ul>
+														</section>
+
+												</div>
+												<div class="1u 0u(mobile)"></div>
 											</div>
 										</div>
 									</section>
@@ -191,7 +209,7 @@
 																Highly experienced English and Spanish speaking specialist, providing implants and other oral surgery treatments.
 																<br>
 																Approved member of HELFO (Norwegian Health System)
-																
+
 															</ul>
 														</section>
 
@@ -242,7 +260,7 @@
 																<li>
 																	<article class="box post-summary">
 																		<h3><a class="icon fa-phone" href="tel:+34965725940"> Phone</a></h3>
-																		<h3>965 72 59 40</h3>
+																		<h3><a href="tel:+34965725940">965 72 59 40</a></h3>
 																	</article>
 																</li>
 																<li>
@@ -316,6 +334,32 @@
 				$(document).ready(function() {
    					$.localScroll({duration:800});
 				});
+
+				$(document).ready(function () {
+                	var img_array = ['Outside', 'Chair', 'Desk', 'Chair2', 'Waiting2'],
+        				newIndex = 0,
+        				index = 0,
+        				interval = 5000;
+
+    				(function changeBg() {
+				        index = (index + 1) % img_array.length;
+
+				        $('#banner-wrapper').css('backgroundImage', function () {
+            				$('#banner-wrapper').animate({
+                				backgroundColor: 'transparent'
+            				}, 1000, function () {
+                				setTimeout(function () {
+                    				$('#banner-wrapper').animate({
+                        				backgroundColor: 'rgb(255,255,255)'
+                    				}, 1000);
+                				}, 3000);
+            				});
+            				//return 'url("images/overlay.png"), url("images/overlay.png"), url("images/' + img_array[index] + '.JPG")';
+            				return 'url("images/' + img_array[index] + '.JPG")';
+        				});
+        			setTimeout(changeBg, interval);
+   					})();
+			});
 			</script>
 
 	</body>
