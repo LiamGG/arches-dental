@@ -1219,7 +1219,7 @@
 
 		.image.featured {
 			display: block;
-			width: 100%;
+			max-width: 100%;
 			margin: 0 0 2em 0;
 			max-height:250px;
 		}
@@ -2670,4 +2670,12 @@ li.alt {
 
 p.directions{
 	font-size: 150%;
+}
+
+.lang{
+	max-height: 20px;
+	max-width: 20px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
 }
