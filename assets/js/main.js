@@ -61,7 +61,7 @@
 				$(
 					'<div id="titleBar">' +
 						'<a href="#navPanel" class="toggle"></a>' +
-						'<span class="title"> Arches <a href="./index_es.html"><img class="lang" src="./images/spain.png"></a><a href="./index.html"><img class="lang" src="./images/uk.png"></a></span>' +
+						'<span class="title"> Arches <a href="./index_es.html"><img class="lang" src="./images/spain.jpg"></a><a href="./index.html"><img class="lang" src="./images/uk.jpg"></a></span>' +
 					'</div>'
 				)
 					.appendTo($body);
