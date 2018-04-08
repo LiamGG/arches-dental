@@ -2679,3 +2679,12 @@ p.directions{
 	margin: 0;
 	padding: 0;
 }
+
+
+
+
+.mySlides {
+	width: auto;
+	max-width: 100%;
+	margin: 0 auto 0 auto;
+}
