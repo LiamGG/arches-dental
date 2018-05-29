@@ -2692,10 +2692,12 @@ p.directions{
 }
 
 
-
+#img-box {
+	max-height: 80vh;
+}
 
 .mySlides {
-	width: auto;
+	max-height: 80vh;
 	max-width: 100%;
 	margin: 0 auto 0 auto;
 }
